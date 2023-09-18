@@ -87,6 +87,10 @@ class _HomeScreenState extends State<HomeScreen> {
                         titleController.text,
                         descriptionController.text,
                       );
+                      setState(() {
+                        titleController.clear();
+                        descriptionController.clear();
+                      });
                       Navigator.pop(context);
                     },
                     child: const Text('Add'),
